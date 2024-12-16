@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightGallery example</title>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- light gallery css -->
+
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+
+    <!-- Active the custom CSS link by removing the comment marks -->
+     <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gallery</h1>
+
+        <div class="row justify-content-center" id="lightgallery">
+            <!-- first thumbnail -->
+            <a class="col-sm-3" href="img/landscape_large.jpg" data-sub-html="<h4>Photo by - <a href='#' >Katherine Gu </a></h4><p> For all those years we were travelling together.</p>">
+                <img class="img-fluid" alt="img1" src="img/landscape_thumb.jpg" />
+            </a>
+
+            <!-- second thumbnail -->
+
+            <a class="col-sm-3 " href="img/landscape2_large.jpg" data-sub-html="<h4>Photo by - <a href='#' >Katherine Gu </a></h4><p> For all those years we were travelling together.</p>">
+                <img class="img-fluid" alt="img2" src="img/landscape2_thumb.jpg" />
+            </a>
+           
+        </div>
+
+
+      
+    </div>
+
+</body>
+<!-- bootstrap js -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+<!-- light gallery js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"
+    integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"
+    integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        licenseKey: '0000-0000-000-0000',
+        speed: 100,
+        plugins: [lgZoom],
+        download: false,
+        
+
+    });
+    
+</script>
+
+</html>
